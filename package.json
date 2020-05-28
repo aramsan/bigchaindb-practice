@@ -1,0 +1,16 @@
+{
+    "name": "bigcahindb-practice",
+    "version": "0.0.1",
+    "description": "Practice for BigchainDB",
+    "repository": "https://github.com/aramsan/bigchaindb-practice.git",
+    "homepage": "https://github.com/aramsan/bigchaindb-practice.git",
+    "author": "Aram Mine <aram.mine@gaiax.com>",
+    "main": "main",
+    "license": "MIT",
+    "scripts": {
+        "dev": "node main.js"
+    },
+    "dependencies": {
+        "bigchaindb-driver": "4.1.2"
+    }
+}
