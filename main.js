@@ -21,6 +21,8 @@ async function main() {
 
     let result
     result = await writeToChain(conn, data, alice)
+    //console.log(result)
+    result = await queryAsset(conn, result.id)
     console.log(result)
 }
 
@@ -45,4 +47,8 @@ async function writeToChain(conn, data, keypair) {
     const txSigned = driver.Transaction.signTransaction(tx, keypair.privateKey)
 
     return await conn.postTransactionCommit(txSigned)
+}
+
+async function queryAsset(conn, query) {
+    return await conn.searchAssets(query)
 }
