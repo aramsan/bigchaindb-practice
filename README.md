@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This is first write access to BigchainDB.
+This is first write and read access to BigchainDB.
 
 ## Preparation
 
